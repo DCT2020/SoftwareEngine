@@ -82,7 +82,6 @@ int CALLBACK WinMain(_In_ HINSTANCE hInstance,
 			// Update
 			// ...
 			gSoftEngine->Update();
-			gSoftEngine->Draw();
 		}
 	}
 
@@ -100,20 +99,8 @@ LRESULT CALLBACK WndProc(HWND _hWnd, UINT _msg, WPARAM _wParam, LPARAM _lParam)
 	switch (_msg)
 	{
 	case WM_PAINT:
-	{
-	/*	for (int i = 0; i < WINDOW_WIDTH*WINDOW_HEIGHT * 0.5f; ++i)
-		{
-			gSoftEngine->mDrawBuffer[i] = RGB(255, 255, 0);
-		}*/
-
-		//HDC hdc;
-		//PAINTSTRUCT ps;
-		//
-		//hdc = BeginPaint(_hWnd, &ps);
-		//BitBlt(hdc, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, gSoftEngine->hDibDrawTextureDC, 0, 0, SRCCOPY);
-		//EndPaint(_hWnd, &ps);
-	}
-	break;
+		gSoftEngine->Draw();
+		break;
 	case WM_DESTROY:
 		PostQuitMessage(NULL);
 		break;
