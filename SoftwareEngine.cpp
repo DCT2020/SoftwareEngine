@@ -136,3 +136,21 @@ void CSoftwareEngine::LineDrawBLG(const int& _fx, const int& _fy, const int& _tx
 {
 
 }
+
+void CSoftwareEngine::PolygonFillSL(const int _points[][2], const COLORREF color[], int _count)
+{
+	static int Ymin = 0;
+	static int Ymax = 0;
+
+	Ymin = _points[0][1];
+	Ymax = _points[0][1];
+	for (int i = 1; i < _count; ++i)
+	{
+		if (Ymax < _points[i][1])
+			Ymax = _points[i][1];
+		else if (Ymin > _points[i][1])
+			Ymin = _points[i][1];
+	}
+
+
+}

@@ -28,5 +28,7 @@ protected:
 
 	void LineDrawDDA(const int& _fx, const int& _fy, const int& _tx, const int& _ty, const COLORREF &color);
 	void LineDrawBLG(const int& _fx, const int& _fy, const int& _tx, const int& _ty, const COLORREF &color);
+
+	void PolygonFillSL(const int _points[][2], const COLORREF color[], int _count);
 };
 
