@@ -1,0 +1,4 @@
+﻿  SoftwareEngine.cpp
+c:\users\sogang\documents\github\softwareengine\softwareengine.cpp(108): warning C4244: '=': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sogang\documents\github\softwareengine\softwareengine.cpp(109): warning C4244: '=': 'const int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ConsoleApplication2.vcxproj -> C:\Users\SOGANG\Documents\GitHub\SoftwareEngine\x64\Debug\ConsoleApplication2.exe

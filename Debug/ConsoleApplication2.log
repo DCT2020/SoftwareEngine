@@ -1,0 +1,4 @@
+﻿  SoftwareEngine.cpp
+  ConsoleApplication2.cpp
+  Generating Code...
+LINK : fatal error LNK1168: cannot open C:\Users\SOGANG\Desktop\ConsoleApplication2\Debug\ConsoleApplication2.exe for writing
